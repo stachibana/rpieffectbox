@@ -1,11 +1,11 @@
-#N canvas 576 299 660 539 10;
+#N canvas 575 305 660 539 10;
 #X obj 31 72 delwrite~ pitch 50;
 #X obj 166 -94 vsl 15 128 1 5 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1714 1;
+-1 -1 4407 1;
 #X floatatom 173 64 5 0 0 0 - - -;
 #X obj 76 226 vd~ pitch;
 #X obj 164 132 hsl 128 15 0.0001 5 0 0 empty empty empty -2 -8 0 10
--260097 -1 -1 12700 1;
+-260097 -1 -1 3525 1;
 #X floatatom 173 168 5 0 0 0 - - -;
 #X obj 57 107 osc~ 2;
 #X obj 68 139 *~ 1;
@@ -21,6 +21,8 @@
 #X obj 335 -23 route 0 1 2;
 #X obj 232 -79 * 0.005;
 #X obj 282 16 * 0.005;
+#X obj 479 92 loadbang;
+#X msg 481 179 \; pd dsp 1;
 #X connect 1 0 2 0;
 #X connect 1 0 6 0;
 #X connect 3 0 15 0;
@@ -41,3 +43,4 @@
 #X connect 17 2 19 0;
 #X connect 18 0 1 0;
 #X connect 19 0 4 0;
+#X connect 20 0 21 0;

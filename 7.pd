@@ -1,4 +1,4 @@
-#N canvas 242 235 532 500 10;
+#N canvas 241 241 532 500 10;
 #X text 273 427 Pierre Massat \, GuitarExtended \, 2012.s;
 #X obj 21 379 vcf~;
 #X obj 20 -18 adc~;
@@ -31,6 +31,8 @@
 #X obj 260 -1 * 0.004;
 #X obj 23 60 clip~ -0.5 0.5;
 #X obj 23 38 *~ 25;
+#X obj 402 189 loadbang;
+#X msg 400 302 \; pd dsp 1;
 #X connect 1 0 3 1;
 #X connect 1 0 3 0;
 #X connect 2 0 27 0;
@@ -62,3 +64,4 @@
 #X connect 25 0 17 0;
 #X connect 26 0 1 0;
 #X connect 27 0 26 0;
+#X connect 28 0 29 0;
